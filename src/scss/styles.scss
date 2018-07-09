@@ -1,0 +1,27 @@
+// ITCSS structure https://other.media/itcss-the-inverted-triangle-css-the-right-way-up/
+
+// Layer One
+// Settings - Contains the variables used across your project, e.g. colour defaults, grid settings
+
+// Layer Two
+// Tools - All your mixins/functions used across the project. Its important not to output any CSS in the first two layers
+
+// Layer Three
+// Generic - High level rules, think normalize.css – nothing project design specific. This is the first layer which generates actual CSS
+@import 'generic/normalize';
+
+// Layer Four
+// Base/Elements - Styles that go directly on HTML elements, no classes or id are specified yet
+
+// Layer Five
+// Objects - So called “cosmetic free design patterns” such as a grid system
+
+// Layer Six
+// Components - UI components from the design team, e.g. footer
+@import 'components/material';
+
+// Layer Seven
+// Trump - Overrides and helpers
+
+@import '~material-design-icons/iconfont/material-icons.css';
+@import '~@angular/material/prebuilt-themes/purple-green.css';
