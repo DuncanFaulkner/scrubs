@@ -10,7 +10,8 @@ import {
   MatButtonModule,
   MatSidenavModule,
   MatIconModule,
-  MatListModule
+  MatListModule,
+  MatMenuModule
 } from '@angular/material';
 import { LayoutsComponent } from './layouts/layouts.component';
 import { LocationStrategy, HashLocationStrategy } from '@angular/common';
@@ -26,7 +27,8 @@ import { LocationStrategy, HashLocationStrategy } from '@angular/common';
     MatButtonModule,
     MatSidenavModule,
     MatIconModule,
-    MatListModule
+    MatListModule,
+    MatMenuModule
   ],
   providers: [
     {
