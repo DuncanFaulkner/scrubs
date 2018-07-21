@@ -6,7 +6,7 @@ $chameleon-dark-theme-background: (
   status-bar: map_get($mat-green, 900),
   app-bar: map_get($mat-green, 900),
   background: map-get($mat-green, 900),
-  hover: rgba(white, 0.04),
+  hover: rgba(#2e7d32, 1),
   card: map_get($mat-red, 800),
   dialog: map_get($mat-grey, 800),
   disabled-button: $white-12-opacity,
@@ -30,7 +30,7 @@ $chameleon-dark-theme-foreground: (
   secondary-text: rgba(white, 0.7),
   icon: white,
   icons: white,
-  text: white,
+  text: rgba(white, 0.7),
   slider-min: white,
   slider-off: rgba(white, 0.3),
   slider-off-active: rgba(white, 0.3)

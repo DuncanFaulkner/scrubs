@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-
 import { HomeRoutingModule } from './home-routing.module';
 import { HomeComponent } from './home.component';
+import { SharedModule } from '../shared/shared';
+// import { SlideshowModule } from 'ng-simple-slideshow';
 
 @NgModule({
-  imports: [CommonModule, HomeRoutingModule],
+  imports: [HomeRoutingModule, SharedModule],
   declarations: [HomeComponent]
 })
 export class HomeModule {

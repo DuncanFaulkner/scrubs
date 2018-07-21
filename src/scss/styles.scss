@@ -6,6 +6,7 @@
 
 // Layer Two
 // Tools - All your mixins/functions used across the project. Its important not to output any CSS in the first two layers
+@import 'tools/mixins';
 
 // Layer Three
 // Generic - High level rules, think normalize.css – nothing project design specific. This is the first layer which generates actual CSS
@@ -13,6 +14,7 @@
 
 // Layer Four
 // Base/Elements - Styles that go directly on HTML elements, no classes or id are specified yet
+@import 'elements/typography';
 
 // Layer Five
 // Objects - So called “cosmetic free design patterns” such as a grid system

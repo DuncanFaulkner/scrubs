@@ -1,0 +1,20 @@
+@import 'src/scss/tools/mixins';
+@import 'src/scss/elements/typography';
+
+.spacer__left {
+  margin-left: 25px;
+}
+.spacer__right {
+  margin-right: 25px;
+}
+mat-grid-tile {
+  background: lightblue;
+}
+.example-card {
+  max-width: 400px;
+}
+
+.example-header-image {
+  background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+  background-size: cover;
+}
