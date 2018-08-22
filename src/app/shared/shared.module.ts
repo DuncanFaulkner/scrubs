@@ -80,6 +80,7 @@ import {
   ],
   exports: [
     CommonModule,
+    FlexLayoutModule,
     CdkTableModule,
     MatAutocompleteModule,
     MatButtonModule,
