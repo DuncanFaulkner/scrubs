@@ -2,9 +2,11 @@
 
 // Layer One
 // Settings - Contains the variables used across your project, e.g. colour defaults, grid settings
+@import 'settings/color';
 
 // Layer Two
 // Tools - All your mixins/functions used across the project. Its important not to output any CSS in the first two layers
+@import 'tools/mixins';
 
 // Layer Three
 // Generic - High level rules, think normalize.css – nothing project design specific. This is the first layer which generates actual CSS
@@ -12,16 +14,17 @@
 
 // Layer Four
 // Base/Elements - Styles that go directly on HTML elements, no classes or id are specified yet
+@import 'elements/typography';
 
 // Layer Five
 // Objects - So called “cosmetic free design patterns” such as a grid system
 
 // Layer Six
 // Components - UI components from the design team, e.g. footer
-@import 'components/material';
 
 // Layer Seven
 // Trump - Overrides and helpers
 
 @import '~material-design-icons/iconfont/material-icons.css';
-@import '~@angular/material/prebuilt-themes/purple-green.css';
+@import 'themes/chameleon-theme';
+@import 'components/material';

@@ -1,0 +1,89 @@
+@import '~@angular/material/theming';
+
+@include mat-core();
+
+$chameleon-dark-theme-background: (
+  status-bar: map_get($mat-green, 900),
+  app-bar: map_get($mat-green, 900),
+  background: map-get($mat-green, 900),
+  hover: rgba(#2e7d32, 1),
+  card: map_get($mat-red, 800),
+  dialog: map_get($mat-grey, 800),
+  disabled-button: $white-12-opacity,
+  raised-button: map-get($mat-grey, 800),
+  focused-button: $white-6-opacity,
+  selected-button: map_get($mat-grey, 900),
+  selected-disabled-button: map_get($mat-grey, 800),
+  disabled-button-toggle: black,
+  unselected-chip: map_get($mat-grey, 700),
+  disabled-list-option: black
+);
+
+$chameleon-dark-theme-foreground: (
+  base: map_get($mat-green, 900),
+  divider: $white-12-opacity,
+  dividers: $white-12-opacity,
+  disabled: rgba(white, 0.3),
+  disabled-button: rgba(white, 0.3),
+  disabled-text: rgba(white, 0.3),
+  hint-text: rgba(white, 0.3),
+  secondary-text: rgba(white, 0.7),
+  icon: white,
+  icons: white,
+  text: rgba(white, 0.7),
+  slider-min: white,
+  slider-off: rgba(white, 0.3),
+  slider-off-active: rgba(white, 0.3)
+);
+
+@function create-chameleon-theme($primary, $accent, $warn: mat-palette($mat-red)) {
+  @return (
+    primary: $primary,
+    accent: $accent,
+    warn: $warn,
+    is-dark: false,
+    foreground: $chameleon-dark-theme-foreground,
+    background: $chameleon-dark-theme-background
+  );
+}
+
+$custom-theme-primary: mat-palette($mat-green, 900);
+$custom-theme-accent: mat-palette($mat-green, A200, A100, A400);
+$custom-theme-warn: mat-palette($mat-red);
+
+$custom-theme: create-chameleon-theme(
+  $custom-theme-primary,
+  $custom-theme-accent,
+  $custom-theme-warn
+);
+
+@include angular-material-theme($custom-theme);
+
+// $chameleon-light-primary: mat-palette($mat-green, 900);
+// $chameleon-light-accent: mat-palette($mat-green, A200, A100, A400);
+// $chameleon-light-warn: mat-palette($mat-red);
+// $chameleon-light-theme: mat-light-theme(
+//   $chameleon-light-primary,
+//   $chameleon-light-accent,
+//   $chameleon-light-warn
+// );
+// .chameleon-light-theme {
+//   @include angular-material-theme($chameleon-light-theme);
+// }
+
+// Define an alternate dark theme.
+// $chameleon-dark-primary: mat-palette($mat-green, 900);
+// $chameleon-dark-accent: mat-palette($mat-green, A200, A100, A400);
+// $chameleon-dark-warn: mat-palette($mat-red);
+// $chameleon-dark-theme: mat-dark-theme(
+//   $chameleon-dark-primary,
+//   $chameleon-dark-accent,
+//   $chameleon-dark-warn
+// );
+
+// Include the alternative theme styles inside of a block with a CSS class. You can make this
+// CSS class whatever you want. In this example, any component inside of an element with
+// `.chameleon-dark-theme` will be affected by this alternate dark theme instead of the default theme.
+// .chameleon-dark-theme {
+//   @include angular-material-theme($chameleon-dark-theme);
+// }

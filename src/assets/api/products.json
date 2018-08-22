@@ -1,0 +1,170 @@
+[
+  {
+    "productId": 1,
+    "name": "Leaf Rake",
+    "code": "123456",
+    "description": "Leaf Rake",
+    "onSale": false,
+    "featured": false,
+    "price": "25.00",
+    "salePrice": "0.00",
+    "starRating": "3.2",
+    "colour": "",
+    "imageUrl": "../assets/img/products/action_hero.png",
+    "quantity": [
+      {
+        "small": "5",
+        "medium": "6",
+        "large": "3",
+        "extraLarge": "6"
+      }
+    ]
+  },
+  {
+    "productId": 2,
+    "name": "Leaf Rake",
+    "code": "123456",
+    "description": "Leaf Rake",
+    "onSale": true,
+    "featured": false,
+    "price": "25.00",
+    "salePrice": "20.00",
+    "starRating": "3.2",
+    "colour": "",
+    "imageUrl": "../assets/img/products/action_hero.png",
+    "quantity": [
+      {
+        "small": "5",
+        "medium": "6",
+        "large": "3",
+        "extraLarge": "6"
+      }
+    ]
+  },
+  {
+    "productId": 3,
+    "name": "Leaf Rake",
+    "code": "123456",
+    "description": "Leaf Rake",
+    "onSale": false,
+    "featured": true,
+    "price": "25.00",
+    "salePrice": "0.00",
+    "starRating": "3.2",
+    "colour": "",
+    "imageUrl": "../assets/img/products/action_hero.png",
+    "quantity": [
+      {
+        "small": "5",
+        "medium": "6",
+        "large": "3",
+        "extraLarge": "6"
+      }
+    ]
+  },
+  {
+    "productId": 4,
+    "name": "Leaf Rake",
+    "code": "123456",
+    "description": "Leaf Rake",
+    "onSale": true,
+    "featured": false,
+    "price": "25.00",
+    "salePrice": "20.00",
+    "starRating": "3.2",
+    "colour": "",
+    "imageUrl": "../assets/img/products/action_hero.png",
+    "quantity": [
+      {
+        "small": "5",
+        "medium": "6",
+        "large": "3",
+        "extraLarge": "6"
+      }
+    ]
+  },
+  {
+    "productId": 5,
+    "name": "Leaf Rake",
+    "code": "123456",
+    "description": "Leaf Rake",
+    "onSale": true,
+    "featured": false,
+    "price": "25.00",
+    "salePrice": "20.00",
+    "starRating": "3.2",
+    "colour": "",
+    "imageUrl": "../assets/img/products/action_hero.png",
+    "quantity": [
+      {
+        "small": "5",
+        "medium": "6",
+        "large": "3",
+        "extraLarge": "6"
+      }
+    ]
+  },
+  {
+    "productId": 6,
+    "name": "Leaf Rake",
+    "code": "123456",
+    "description": "Leaf Rake",
+    "onSale": true,
+    "featured": false,
+    "price": "25.00",
+    "salePrice": "20.00",
+    "starRating": "3.2",
+    "colour": "",
+    "imageUrl": "../assets/img/products/action_hero.png",
+    "quantity": [
+      {
+        "small": "5",
+        "medium": "6",
+        "large": "3",
+        "extraLarge": "6"
+      }
+    ]
+  },
+  {
+    "productId": 7,
+    "name": "Leaf Rake",
+    "code": "123456",
+    "description": "Leaf Rake",
+    "onSale": true,
+    "featured": false,
+    "price": "25.00",
+    "salePrice": "20.00",
+    "starRating": "3.2",
+    "colour": "",
+    "imageUrl": "../assets/img/products/action_hero.png",
+    "quantity": [
+      {
+        "small": "5",
+        "medium": "6",
+        "large": "3",
+        "extraLarge": "6"
+      }
+    ]
+  },
+  {
+    "productId": 8,
+    "name": "Leaf Rake",
+    "code": "123456",
+    "description": "Leaf Rake",
+    "onSale": true,
+    "featured": false,
+    "price": "25.00",
+    "salePrice": "20.00",
+    "starRating": "3.2",
+    "colour": "",
+    "imageUrl": "../assets/img/products/action_hero.png",
+    "quantity": [
+      {
+        "small": "5",
+        "medium": "6",
+        "large": "3",
+        "extraLarge": "6"
+      }
+    ]
+  }
+]
