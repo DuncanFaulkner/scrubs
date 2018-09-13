@@ -1,0 +1,90 @@
+@import '../../../../scss/styles.scss';
+.pod {
+  &__outer {
+    border: none;
+    height: 395px;
+    width: 325px;
+    margin: 10px;
+    border-radius: 4px;
+  }
+  &__container--image {
+    // display: flex;
+    // flex-direction: row;
+    // align-items: center;
+    // justify-content: center;
+    // position: relative;
+  }
+  &__container--link {
+    cursor: pointer;
+  }
+  &__image {
+    height: 325px;
+    width: 325px;
+  }
+  &__sale--item {
+    width: 0;
+    height: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    border-style: solid;
+    // border-width: 100px 100px 0 0;
+    border-width: 100px 0 0 100px;
+    border-color: rgba(red, 0.4) transparent transparent transparent;
+  }
+  &__sale--content {
+    position: absolute;
+    left: -72px;
+    top: -65px;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(45deg);
+    color: rgba(238, 238, 238, 0.7);
+    width: 80px;
+    // display: flex;
+    // flex-direction: row;
+    // align-items: center;
+    // justify-content: center;
+    @extend .font-title;
+  }
+  &__feature--item {
+    width: 0;
+    height: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    border-style: solid;
+    border-width: 100px 0 0 100px;
+    border-color: rgba(green, 0.6) transparent transparent transparent;
+  }
+  &__feature--content {
+    position: absolute;
+    right: -5px;
+    top: -73px;
+    transform: rotate(45deg);
+    color: rgba(238, 238, 238, 0.7);
+    width: 80px;
+    // display: flex;
+    // flex-direction: row;
+    // align-items: center;
+    // justify-content: center;
+    @extend .font-title;
+  }
+  &__product--details {
+    // display: flex;
+    // flex-direction: row;
+    // align-items: center;
+    // justify-content: center;
+    @extend .font-title;
+    margin-top: 8px;
+    color: rgba(white, 0.7);
+  }
+  &__product--price {
+    // display: flex;
+    // flex-direction: row;
+    // align-items: center;
+    // justify-content: center;
+    @extend .font-title;
+    margin-top: 8px;
+    color: rgba(white, 0.7);
+  }
+}
