@@ -39,6 +39,7 @@ import {
   MatToolbarModule,
   MatTooltipModule
 } from '@angular/material';
+import { ProductsComponent } from './product/products/products.component';
 
 @NgModule({
   imports: [
@@ -78,6 +79,7 @@ import {
     MatToolbarModule,
     MatTooltipModule
   ],
+  declarations: [ProductsComponent],
   exports: [
     CommonModule,
     FlexLayoutModule,
@@ -113,7 +115,8 @@ import {
     MatTableModule,
     MatTabsModule,
     MatToolbarModule,
-    MatTooltipModule
+    MatTooltipModule,
+    ProductsComponent
   ],
   providers: [MatIconRegistry]
 })

@@ -1,0 +1,15 @@
+.pods {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  // .pod-image {
+  //   width: 150px;
+  //   height: 150px;
+  // }
+  .pods-content {
+    margin: 15px;
+    color: rgba(#fff, 0.7);
+  }
+}

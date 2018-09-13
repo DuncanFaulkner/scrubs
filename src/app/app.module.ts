@@ -6,7 +6,9 @@ import { AppRoutingModule } from './app.routing';
 import { AppComponent } from './app.component';
 import { LayoutModule } from '@angular/cdk/layout';
 import { SharedModule } from './shared/shared.module';
+import { LayoutsModule } from './layouts/layouts.module';
 import { LocationStrategy, HashLocationStrategy } from '@angular/common';
+import { ProductService } from '../app/services/product.service';
 
 @NgModule({
   declarations: [AppComponent],
@@ -17,8 +19,9 @@ import { LocationStrategy, HashLocationStrategy } from '@angular/common';
     AppRoutingModule,
     LayoutModule
   ],
-  exports: [SharedModule],
+  exports: [SharedModule, LayoutsModule],
   providers: [
+    ProductService,
     {
       provide: LocationStrategy,
       useClass: HashLocationStrategy

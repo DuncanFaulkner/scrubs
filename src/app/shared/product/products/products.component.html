@@ -1,0 +1,43 @@
+<div fxFlex="100%" fxLayout="row" fxLayoutAlign="start" style="margin: 10px;">
+  <div fxLayout="column" fxLayoutAlign="start">
+    <div>
+      <a (click)="onSelectedProduct(product.productId)">
+        <img [src]="product.imageUrl" />
+      </a>
+      <!-- <div *ngIf="product.featured">
+        <div>Feature</div>
+      </div> -->
+    </div>
+    <!-- <a (click)="onSelectedProduct(product.productId) "> -->
+    <div style="border:1px solid white; position: relative;">
+      <div class="pod__sale--item" *ngIf="product.onSale">
+        <div class="pod__sale--content">On Sale</div>
+      </div>
+      <mat-list>
+        <mat-list-item>
+          <span matLine>{{product.name}}</span>
+          <span matLine>{{product.code}}</span>
+          <span matLine>{{product.description}}</span>
+          <span matLine *ngIf="!product.onSale">{{product.price | currency:'GBP': 'symbol': '2.2-2'}}</span>
+          <span matLine *ngIf="product.onSale">{{product.salePrice | currency:'GBP': 'symbol': '2.2-2'}}</span>
+          <span matLine>{{product.starRating}}</span>
+          <button matLine mat-button (click)="onSelectedProduct(product.productId)">Details</button>
+        </mat-list-item>
+      </mat-list>
+    </div>
+    <!-- <div style="font-size: 24px; ">
+        <span>{{product.name}}</span>
+      </div>
+      <div *ngIf="product.onSale; else regular ">
+        {{product.salePrice | currency:'GBP': 'symbol': '2.2-2'}}
+      </div> -->
+    <!-- </a> -->
+  </div>
+</div>
+
+
+<ng-template #regular>
+  <div>
+    {{product.price | currency:'GBP': 'symbol': '2.2-2'}}
+  </div>
+</ng-template>
