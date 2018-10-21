@@ -1,12 +1,22 @@
+@import 'src/scss/styles.scss';
+
 .sidenav-container {
   height: 100%;
 }
 
 .sidenav {
-  width: 200px;
+  width: 300px;
+  padding-top: 50px;
 }
 
-.mat-toolbar.mat-primary {
-  position: sticky;
-  top: 0;
+.menu {
+  &__heading {
+    @extend .menu-title;
+    margin-left: 16px;
+    color: white;
+  }
 }
+// .mat-toolbar.mat-primary {
+//   position: sticky;
+//   top: 0;
+// }

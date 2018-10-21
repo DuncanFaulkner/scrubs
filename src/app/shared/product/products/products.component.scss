@@ -1,4 +1,4 @@
-@import '../../../../scss/styles.scss';
+@import 'src/scss/styles.scss';
 .pod {
   &__outer {
     border: none;
@@ -34,7 +34,7 @@
   }
   &__sale--content {
     position: absolute;
-    left: -72px;
+    right: -5px;
     top: -65px;
     -webkit-transform: rotate(-45deg);
     transform: rotate(45deg);
@@ -59,7 +59,7 @@
   &__feature--content {
     position: absolute;
     right: -5px;
-    top: -73px;
+    top: -65px;
     transform: rotate(45deg);
     color: rgba(238, 238, 238, 0.7);
     width: 80px;

@@ -3,13 +3,13 @@
     "productId": 1,
     "name": "Action Comic",
     "code": "123456",
-    "description": "Action Hero design",
+    "description": "Action Hero",
     "onSale": false,
-    "featured": false,
+    "featured": true,
     "price": "25.00",
-    "salePrice": "00.00",
+    "salePrice": "20.00",
     "starRating": "3.2",
-    "colour": "",
+    "colour": "Pattern",
     "imageUrl": "../assets/img/products/action_hero.png",
     "quantity": [
       {

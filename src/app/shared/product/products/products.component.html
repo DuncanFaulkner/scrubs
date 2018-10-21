@@ -1,19 +1,47 @@
-<div fxFlex="100%" fxLayout="row" fxLayoutAlign="start" style="margin: 10px;">
-  <div fxLayout="column" fxLayoutAlign="start">
-    <div>
-      <a (click)="onSelectedProduct(product.productId)">
-        <img [src]="product.imageUrl" />
-      </a>
-      <!-- <div *ngIf="product.featured">
-        <div>Feature</div>
-      </div> -->
-    </div>
-    <!-- <a (click)="onSelectedProduct(product.productId) "> -->
-    <div style="border:1px solid white; position: relative;">
+<div  style="margin-right:10px; margin-top:10px;">
+  <div style="border: 1px solid #2e7d32;">
+    <div style="position: relative;">
       <div class="pod__sale--item" *ngIf="product.onSale">
         <div class="pod__sale--content">On Sale</div>
       </div>
-      <mat-list>
+      <div class="pod__feature--item" *ngIf="product.featured">
+        <div class="pod__feature--content">Feature</div>
+      </div>
+      <a (click)="onSelectedProduct(product.productId)">
+        <img [src]="product.imageUrl" />
+      </a>
+      <div style="padding-left: 3px; line-height: 20px; margin-top:10px;">
+        <div >
+          <div >Name:</div>
+          <div >{{product.name}}</div>
+        </div>
+        <div >
+          <div >Code:</div>
+          <div >{{product.code}}</div>
+        </div>
+        <div >
+          <div >Description:</div>
+          <div >{{product.description}}</div>
+        </div>
+        <div *ngIf="product.onSale else regular">
+          <div >
+            <div >On Sale Price:</div>
+            <div >{{product.salePrice | currency:'GBP':'symbol': '2.2-2'}}</div>
+          </div>
+        </div>
+        <div >
+          <div >Rating:</div>
+          <div >{{product.starRating}}</div>
+        </div>
+        <div >
+          <div >Colour:</div>
+          <div >{{product.colour}}</div>
+        </div>
+      </div>
+    </div>
+    <!-- <a (click)="onSelectedProduct(product.productId) "> -->
+
+    <!-- <mat-list>
         <mat-list-item>
           <span matLine>{{product.name}}</span>
           <span matLine>{{product.code}}</span>
@@ -23,8 +51,8 @@
           <span matLine>{{product.starRating}}</span>
           <button matLine mat-button (click)="onSelectedProduct(product.productId)">Details</button>
         </mat-list-item>
-      </mat-list>
-    </div>
+      </mat-list> -->
+
     <!-- <div style="font-size: 24px; ">
         <span>{{product.name}}</span>
       </div>
@@ -37,7 +65,8 @@
 
 
 <ng-template #regular>
-  <div>
-    {{product.price | currency:'GBP': 'symbol': '2.2-2'}}
+  <div >
+    <div >Price</div>
+    <div >{{product.price | currency:'GBP':'symbol':'2.2-2'}}</div>
   </div>
 </ng-template>

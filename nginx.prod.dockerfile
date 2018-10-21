@@ -10,8 +10,11 @@ FROM nginx:alpine
 VOLUME /var/cache/nginx
 COPY --from=node /app/dist /usr/share/nginx/html
 COPY ./config/nginx.conf /etc/nginx/conf.d/default.conf
+EXPOSE 80 443
 
-# docker build -t chameleon-scrubs -f nginx.prod.dockerfile .
+# docker build -t chameleon-scrubs -f nginx.prod.dockerfile . original use below instead
+# docker build --rm -f "nginx.prod.dockerfile" -t chameleon-scrubs: .  <- copy up to the dot (including the dot)
+
 # docker run -d -p 8080:80 chameleon-scrubs
 
 
