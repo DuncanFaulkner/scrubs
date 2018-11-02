@@ -1,0 +1,9 @@
+{
+  "port": 3002,
+  "database": {
+    "mysql": {
+      "table": "scrubs_prod",
+      "password": "bloodySecureDF!!"
+    }
+  }
+}
